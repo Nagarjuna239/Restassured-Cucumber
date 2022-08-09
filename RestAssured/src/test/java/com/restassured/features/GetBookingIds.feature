@@ -9,4 +9,4 @@ Feature: GetBookingIds
 
     Examples: 
       | TestcaseName          | URL                                  | Endpoint | httpstatusCode | bookingIDpresent1 | bookingIDpresent2 |
-      | GetBooking ids-200 ok | https://restful-booker.herokuapp.com | /booking |            200 |             19533 |             19313 |
+      | GetBooking ids-200 ok | https://restful-booker.herokuapp.com | /booking |            200 |              1038 |              1183 |

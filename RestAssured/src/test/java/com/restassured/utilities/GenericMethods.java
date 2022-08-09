@@ -235,6 +235,7 @@ public class GenericMethods extends Baseclass {
 				{
 					Reporter.log(bookingIDTwo+"is present",true);
 				}
+
 		}
 	}
 	
