@@ -12,4 +12,4 @@ Feature: Verify partial Update Booking API Service
       | partialUpdateBooking-200 OK                  | https://restful-booker.herokuapp.com/auth | admin    | password123 | https://restful-booker.herokuapp.com | /booking/1562  | Jame      | Browns   |            200 |
       | partialUpdateBooking-Update Firstname        | https://restful-booker.herokuapp.com/auth | admin    | password123 | https://restful-booker.herokuapp.com | /booking/2459  | James     | Browns   |            200 |
       | partialUpdateBooking-200-First name is blank | https://restful-booker.herokuapp.com/auth | admin    | password123 | https://restful-booker.herokuapp.com | /booking/1633  |           | Brow     |            200 |
-      | partialUpdateBooking-405-Method Not Allowed  | https://restful-booker.herokuapp.com/auth | admin    | password123 | https://restful-booker.herokuapp.com | /booking/19533 | James     | Browns   |            200 |
+      | partialUpdateBooking-405-Method Not Allowed  | https://restful-booker.herokuapp.com/auth | admin    | password123 | https://restful-booker.herokuapp.com | /booking/19533 | James     | Browns   |            405 |
