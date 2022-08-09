@@ -38,7 +38,7 @@ public class Hooks extends Baseclass {
 			throw e;
 
 		}
-		Reporter.log("******************* End Test ****************",true);
+		Reporter.log("******************* End Test ****************"+ScenarioName,true);
 
 	}
 
