@@ -106,7 +106,6 @@ public class GenericMethods extends Baseclass {
 
 		Reporter.log("INFO" + "@Then: HTTPStatus" + httpstatusCode + "to be verified", true);
 	
-
 		int httpstatusCode1 = Integer.parseInt(httpstatusCode);
 		int httpStatus = gResponse.statusCode();
 	
