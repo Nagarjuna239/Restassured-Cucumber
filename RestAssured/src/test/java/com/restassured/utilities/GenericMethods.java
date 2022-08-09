@@ -48,10 +48,7 @@ public class GenericMethods extends Baseclass {
 			gResponse = gRequest.post(Endpoint);
 			
 			Reporter.log("INFO" + "@when :Successful");
-			/*
-			 * Reporter.log("INFO:" + "Response from service:" + gResponse.asString(),
-			 * true);
-			 */		} catch (Exception e) {
+				} catch (Exception e) {
 			Reporter.log("ERROR" + " Exception", true);
 			Reporter.log("ERROR" + "StackTrace:" + e.toString(), true);
 			e.printStackTrace();
@@ -96,7 +93,8 @@ public class GenericMethods extends Baseclass {
 			int httpStatus = gResponse.statusCode();
 			
 			  Reporter.log("INFO" + "Response:" + gResponse.prettyPrint(), true);
-			 		Reporter.log("Response headers are " + gResponse.headers(), true);		} catch (Exception e) {
+			 		Reporter.log("Response headers are " + gResponse.headers(), true);		
+			 		} catch (Exception e) {
 			Reporter.log("ERROR" + " Exception", true);
 			Reporter.log("ERROR" + "StackTrace:" + e.toString(), true);
 			e.printStackTrace();
@@ -184,10 +182,7 @@ public class GenericMethods extends Baseclass {
 			Reporter.log("INFO" + "@when : post request to be triggered", true);
 			gResponse = gRequest.delete(Endpoint);
 			Reporter.log("INFO" + "@when :Successful");
-			/*
-			 * Reporter.log("INFO:" + "Response from service:" + gResponse.asString(),
-			 * true);
-			 */		} catch (Exception e) {
+				} catch (Exception e) {
 			Reporter.log("ERROR" + " Exception", true);
 			Reporter.log("ERROR" + "StackTrace:" + e.toString(), true);
 			e.printStackTrace();
@@ -217,7 +212,6 @@ public class GenericMethods extends Baseclass {
 			AssertEquals(httpStatus, httpstatusCode1, "Assertion of HTTP Status code");
 			
 		} catch (NumberFormatException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	    
